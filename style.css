@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+
+  hr {
+    border: none;          
+    border-top: 2px solid #999999; 
+    margin: 1rem 0;        
+  }
+  
+  /* Header */
+  .main-header {
+    background-color: #f2671f;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+  .main-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .main-header p {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+  
+  /* Navigatie */
+  .main-nav {
+    background-color: #c65012; 
+     border-bottom: 3px solid #ffd700;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+  }
+  
+  .main-nav li {
+    margin: 0 1rem; 
+  }
+  
+  .main-nav a {
+    color: #fff;
+    font-weight: bold;
+    padding: 0.75rem 0;
+    display: inline-block;
+  }
+  
+  .main-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Container  */
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+  
+  /* Kolommen */
+  .left-column {
+    flex: 1; 
+    padding: 1rem;
+    min-width: 200px;
+    background-color: #FFCC99;
+  }
+
+  .right-column {
+    flex: 2; 
+    padding: 1rem;
+    min-width: 280px;
+  }
+
+  .map-container {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .contact-left {
+    flex: 0 0 30%;          
+    background-color: #FFCC99;  
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-right: 1rem; 
+  }
+  
+  /* Titels in kolommen */
+  .left-column h2 {
+    color: #000;
+  }
+  
+  .right-column h2 {
+    color: #c65012;
+  }
+  .left-column h3, .right-column h3 {
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  /* Afbeeldingen in kolommen */
+  .left-column img, .right-column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+}
+
+.float-right {
+  float: right;
+  width: 300px;
+  height: auto;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.float-left {
+  float: left;
+  width: 300px;
+  height: auto;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+/* Rechterkolom: formulier */
+.contact-right {
+  flex: 1;                 
+  background-color: #fff;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;  
+  gap: 0.75rem;            
+}
+
+.contact-right label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.contact-right input[type="text"],
+.contact-right input[type="email"],
+.contact-right select,
+.contact-right textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Verzendknop */
+.contact-right input[type="submit"] {
+  width: auto;             
+  padding: 0.5rem 1rem;
+  background-color: #c65012;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-right input[type="submit"]:hover {
+  background-color: #f2671f; 
+}
+
+  /* Footer */
+  footer {
+    background-color: #c65012;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 0;
+    font-size: 0.9rem;
+    color: #000;
+  }
+
+  /* ===== Media query voor mobiele apparaten ===== */
+  @media only screen and (max-width: 768px) {
+  
+  .container {
+    display: block; 
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; 
+    padding: 1rem; 
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-header h1,
+  .main-header p {
+    text-align: center;
+  }
+
+  .main-nav ul {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .main-nav li {
+    margin: 0.5rem 0; 
+  }
+
+  section.specialisatie img {
+    float: none; 
+    display: block; 
+    margin: 1rem auto; 
+  }
+}
